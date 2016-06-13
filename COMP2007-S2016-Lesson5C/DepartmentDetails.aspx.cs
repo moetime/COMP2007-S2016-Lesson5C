@@ -76,8 +76,7 @@ namespace COMP2007_S2016_Lesson5C
                 newDepartment.Budget = Convert.ToDecimal( BudgetTextBox.Text);
 
                 // use LINQ to ADO.NET to add / insert new department into the database
-
-                if (DepartmentID == 0)
+                                if (DepartmentID == 0)
                 {
                     db.Departments.Add(newDepartment);
                 }
